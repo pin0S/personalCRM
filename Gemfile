@@ -42,6 +42,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem "react_on_rails", "13.3.1" # Use the latest and the exact version
+gem "shakapacker", "6.5.5"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
