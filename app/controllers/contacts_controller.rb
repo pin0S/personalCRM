@@ -1,10 +1,20 @@
 class ContactsController < ApplicationController
+  layout "contacts"
+
   def index
-    @contacts = {contacts: Contact.all}
+    ## update this to go through all contacts and add url to individual contacts
+
+    @contacts = { contacts: Contact.all }
+  end
+
+  def new
+     @action = contacts_path
   end
 
   def create
     ## Create a new contact based off info in form
+    Contact.create!(**params[:contact].permit(:name, :email, :phone), user:)
+    redirect_to contacts_path
   end
 
   def update
