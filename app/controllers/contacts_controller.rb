@@ -1,9 +1,10 @@
 class ContactsController < ApplicationController
   layout "contacts"
 
+  ## Next session: start off with model validation
+
   def index
     ## update this to go through all contacts and add url to individual contacts
-
     @contacts = { contacts: Contact.all }
   end
 

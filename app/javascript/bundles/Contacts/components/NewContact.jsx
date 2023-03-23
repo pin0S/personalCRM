@@ -19,6 +19,7 @@ const NewContact = (props) => {
         <label htmlFor="phone">Phone</label>
         <input type="text" name="contact[phone]" id="phone" />
         <button type="submit"> Create New Contact </button>
+
         <input
           type="hidden"
           name="authenticity_token"
